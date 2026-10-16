@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="color-scheme" content="light dark">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Daryl Chouinard. Chemistry, software, systems. Home for my email and general DNS use.">
+  <title>Daryl Anthony Chouinard - Home</title>
+  <link rel="icon" type="image/svg+xml" href="./favicon.svg">
+  <link rel="stylesheet" href="./index.css"/>
+  <style>body { min-width: 350px; }</style>
+</head>
+<body>
+  <main>
+    <header class="comment masthead">; darlo.me - human zone file</header>
+
+    <div class="directives">
+      <span class="keyword">$ORIGIN</span><span class="owner">darlo.me.</span>
+      <span class="keyword">$TTL</span><span>3600</span>
+    </div>
+
+    <section class="identity" aria-label="About me">
+      <div class="record">
+        <span class="record-prefix" aria-hidden="true"><span class="owner">@</span><span>IN</span><span class="keyword">TXT</span></span>
+        <div class="value">"<h1>Daryl Anthony Chouinard</h1>"</div>
+      </div>
+      <div class="record">
+        <span class="record-prefix" aria-hidden="true"><span class="owner">@</span><span>IN</span><span class="keyword">TXT</span></span>
+        <div class="value">"Chemistry, software, systems."</div>
+      </div>
+      <div class="record">
+        <span class="record-prefix" aria-hidden="true"><span class="owner">@</span><span>IN</span><span class="keyword">TXT</span></span>
+        <div class="value">"Canada"</div>
+      </div>
+    </section>
+
+    <section class="contacts" aria-label="Email and links">
+      <div class="primary">
+        <p class="comment section-comment">; the best way to reach me</p>
+        <div class="record contact-record">
+          <span class="record-prefix" aria-hidden="true"><span class="owner">email</span><span>IN</span><span class="keyword">TXT</span></span>
+          <div class="value">"<a class="email" href="mailto:daryl@darlo.me">daryl@darlo.me</a>"</div>
+        </div>
+        <div class="record contact-record">
+          <span class="record-prefix"><span class="owner">gpg</span><span aria-hidden="true">IN</span><span class="keyword" aria-hidden="true">TXT</span></span>
+          <div class="value">"<a class="fingerprint" href="./daryl.pub.asc">49A2 44AA 3D85 4624 7263  1E5C 74B3 0DA7 1841 34CA</a>"</div>
+        </div>
+      </div>
+      <div class="elsewhere">
+        <p class="comment section-comment">; a few other connections</p>
+        <div class="record contact-record">
+          <span class="record-prefix" aria-hidden="true"><span class="owner">code</span><span>IN</span><span class="keyword">TXT</span></span>
+          <div class="value">"<a href="https://github.com/darlo-me">github.com<wbr>/darlo-me</a>"</div>
+        </div>
+        <div class="record contact-record">
+          <span class="record-prefix" aria-hidden="true"><span class="owner">linkedin</span><span>IN</span><span class="keyword">TXT</span></span>
+          <div class="value">"<a href="https://www.linkedin.com/in/daryl-anthony-chouinard/">linkedin.com<wbr>/in<wbr>/daryl-<wbr>anthony-<wbr>chouinard/</a>"</div>
+        </div>
+      </div>
+    </section>
+
+    <footer><p class="comment">; a home for my email</p></footer>
+  </main>
+</body>
+</html>

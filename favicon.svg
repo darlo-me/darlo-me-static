@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"><style>
+  :root { color: #31513a; }
+  .edge { flood-color: #fffdf8; }
+  @media (prefers-color-scheme: dark) {
+    :root { color: #f0f3e9; }
+    .edge { flood-color: #18241c; }
+  }
+</style><filter id="b" color-interpolation-filters="sRGB"><feColorMatrix values="2 0 0 0 0 0 2 0 0 0 0 0 2 0 0 0 0 0 1 0"/></filter><mask id="t" maskUnits="userSpaceOnUse" x="0" y="0" width="32" height="32"><image filter="url(#b)" width="32" height="32" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAAAAABWESUoAAACfElEQVR42p2TzU8TYRDGZ/Z7t7SlLYKWQv0ADEYkkBgUSUwwwRgkHCRiNJ79gzx68i/QgxeNCUKIGpWEiJJgU4EWSwus0O62y+6+u+OhLTaIRn1vk/c3M08mzwPwPw//BeF//RSU4D6BBv6RACLQyJmtDq/s/2aCcL00MhwrbDOq1Q3NBKANNLfR8/AX2yEEoIYJiFVGifef7LIueoZiHl7BSZwPvr7x1TJfBfovqEWQGNUBhCiH95c8WZLKO4VYpc0pp+70Zko/AS1xbTS9h9Mpam0aF4qzmb7su3x0x0XgAQA5CjYPlflJJtvZkVuzM9tqMe2sbmbdmgZZZlYhFBiUNPahsjoYU3SPLMvnqC7ScyF4G9Ne6o1w5Vsk/lYumiQILh0cXewUL0XyxrOBydm1Kf6RDtDkOAeHA6TxoU9q99NVXn/x3t0UdTEZh8Vaf3XF94XXhZUccnoW4WzTWqJ3urDk9bgO1oGyAUW94jJEovTlKWVXSqz3jC5UAQSkiOmi4GsGAAZL2P5gPRMY4OYWW5arGggMD8gFCwCoBMRbxZdCKDHUY+9teQQCADAAAGBIQvzE52N3Y4/JmbOS6ryE1OAtJBBvVtSrudaHGc4HUMFq9AMCKdg3Jq7MdFh74EOAMw57MjwcudGdml9aLk9s2S6zsRHgtOS5e6M4nP94Oprc7hprSdkAYRuw7u9Y8JR4XGzXc542Ie484frXzY1MhSFDAgRZY2gzTfA1ozNghjt4yKeFUHQ3h56PjoEg+JKXlDYlYucXw1xBBqJQEV0+IWcqLuchAMiy4zu8SIqpaKawz2TfgTZ1gx2ZOV7ma8oCEfxTZhH/Nuk/AMh6Fw+oNafMAAAAAElFTkSuQmCC"/></mask><filter id="edge" x="-10%" y="-10%" width="120%" height="120%" color-interpolation-filters="sRGB">
+  <feMorphology in="SourceAlpha" operator="dilate" radius="0.4" result="expanded"/>
+  <feFlood class="edge" flood-opacity="0.85" result="ink"/>
+  <feComposite in="ink" in2="expanded" operator="in" result="outline"/>
+  <feMerge><feMergeNode in="outline"/><feMergeNode in="SourceGraphic"/></feMerge>
+</filter>
+<g filter="url(#edge)"><path fill="currentColor" mask="url(#t)" d="M0 0h32v32H0z"/></g></svg>
